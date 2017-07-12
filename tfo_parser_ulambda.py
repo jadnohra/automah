@@ -11,8 +11,8 @@ def parser():
        | application
        | abstraction
     application: "(" term term ")"
-    abstraction: "[" var "." term "]"
-        | "[" lambda var "." term "]"
+    abstraction: "[" variable "." term "]"
+        | "[" lambda variable "." term "]"
     lambda: "\\" | "L" | "l" | "\\L" | "\\l"
     variable: LETTER
     %import common.LETTER
