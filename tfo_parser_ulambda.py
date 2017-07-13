@@ -10,7 +10,7 @@ def parser():
     term: variable
        | application
        | abstraction
-    application: "(" term term ")"
+    application: "[" term term "]"
     abstraction: "[" variable "." term "]"
         | "[" lambda variable "." term "]"
     lambda: "\\" | "L" | "l" | "\\L" | "\\l"
